@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Ticket</title>
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind and daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- customize tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1DD100',
+                        secondary: '#030712',
+                        third: 'rgba(29, 209, 0, 0.1)',
+                        fourth: 'rgba(29, 209, 0, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- styles -->
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .banner {
+            background-image: url(./images/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F7F8F8] raleway px-4 md:px-16 lg:px-32">
+    <header class="flex justify-between items-center py-4">
+        <div>
+            <h1 class="text-secondary text-4xl font-extrabold">P-Ticket</h1>
+        </div>
+        <div class="flex gap-4">
+            <a href="#" class="text-[rgba(3, 7, 18, 0.7)] font-medium">Home</a><a href="#"
+                class="text-[rgba(3, 7, 18, 0.7)] font-medium">About</a><a href="#"
+                class="text-[rgba(3, 7, 18, 0.7)] font-medium">Destination</a><a href="#"
+                class="text-[rgba(3, 7, 18, 0.7)] font-medium">Search</a>
+        </div>
+        <div>
+            <button class="btn text-primary font-bold text-xl bg-third hover:bg-third border-fourth border-2">Bus <i
+                    class="fa-solid fa-bus"></i></button>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <div class="banner text-center relative">
+            <h1 class="text-white font-extrabold text-6xl p-4 pt-20">End-to-End Travel with</h1>
+            <h1 class="font-extrabold text-6xl text-primary pt-4">P Paribahan</h1>
+            <p class="text-white pt-4">Yes, you can run unit tests and view the results directly within the app. The
+                <br> integrated testing features allow for a streamlined .</p>
+            <button class="btn text-secondary bg-primary border-none my-4 mb-16">Buy Tickets</button>
+            <div class="flex justify-center">
+                <div class="flex absolute -bottom-16 gap-4 justify-center items-center text-center">
+                    <div class="flex bg-white rounded-3xl border-b-2 border-b-primary p-4 gap-2">
+                        <div>
+                            <img src="./images/people.png" alt="">
+                        </div>
+                        <div class="text-left">
+                            <h1 class="text-secondary text-4xl font-bold inter">500K+</h1>
+                            <p class="inter text-lg">Registered users</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white rounded-3xl border-b-2 border-b-primary p-4 gap-2">
+                        <div>
+                            <img src="./images/ticket-cupon.png" alt="">
+                        </div>
+                        <div class="text-left">
+                            <h1 class="text-secondary text-4xl font-bold inter">1.7 lacks</h1>
+                            <p class="inter text-lg">Tickets  sold</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white rounded-3xl border-b-2 border-b-primary p-4 gap-2">
+                        <div>
+                            <img src="./images/stoppage.png" alt="">
+                        </div>
+                        <div class="text-left">
+                            <h1 class="text-secondary text-4xl font-bold inter">80K+</h1>
+                            <p class="inter text-lg">Rental partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
